@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="31" passed="30" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-05-11T18:47:44 IST" name="Surefire suite" finished-at="2023-05-11T18:51:41 IST" duration-ms="237696">
+    <groups>
+    </groups>
+    <test started-at="2023-05-11T18:47:44 IST" name="Surefire test" finished-at="2023-05-11T18:51:41 IST" duration-ms="237696">
+      <class name="Test.HomePageTest">
+        <test-method is-config="true" signature="Launch()[pri:0, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:47:38 IST" name="Launch" finished-at="2023-05-11T18:47:44 IST" duration-ms="5294" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Launch -->
+        <test-method is-config="true" signature="generateReportinit()[pri:0, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:47:44 IST" name="generateReportinit" finished-at="2023-05-11T18:47:44 IST" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReportinit -->
+        <test-method signature="visibility_luma_logo()[pri:1, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:47:44 IST" name="visibility_luma_logo" finished-at="2023-05-11T18:47:44 IST" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visibility_luma_logo -->
+        <test-method signature="visibility_searchbox()[pri:2, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:47:44 IST" name="visibility_searchbox" finished-at="2023-05-11T18:47:44 IST" duration-ms="22" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- visibility_searchbox -->
+        <test-method signature="cartIcon_functionality()[pri:3, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:47:44 IST" name="cartIcon_functionality" finished-at="2023-05-11T18:47:49 IST" duration-ms="5283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cartIcon_functionality -->
+        <test-method signature="search_functionality()[pri:4, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:47:49 IST" name="search_functionality" finished-at="2023-05-11T18:47:56 IST" duration-ms="7407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_functionality -->
+        <test-method signature="whatsNew_functionality()[pri:5, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:47:56 IST" name="whatsNew_functionality" finished-at="2023-05-11T18:48:05 IST" duration-ms="8606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- whatsNew_functionality -->
+        <test-method signature="women_tops_jackets_functionality()[pri:6, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:48:05 IST" name="women_tops_jackets_functionality" finished-at="2023-05-11T18:48:14 IST" duration-ms="9347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- women_tops_jackets_functionality -->
+        <test-method signature="women_tops_hoodies_sweatshirts_functionality()[pri:7, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:48:14 IST" name="women_tops_hoodies_sweatshirts_functionality" finished-at="2023-05-11T18:48:24 IST" duration-ms="9263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- women_tops_hoodies_sweatshirts_functionality -->
+        <test-method signature="women_tops_tees_functionality()[pri:8, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:48:24 IST" name="women_tops_tees_functionality" finished-at="2023-05-11T18:48:33 IST" duration-ms="9531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- women_tops_tees_functionality -->
+        <test-method signature="women_bottoms_pants_functionality()[pri:9, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:48:33 IST" name="women_bottoms_pants_functionality" finished-at="2023-05-11T18:48:42 IST" duration-ms="9059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- women_bottoms_pants_functionality -->
+        <test-method signature="men_bottoms_tanks_functionality()[pri:10, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:48:42 IST" name="men_bottoms_tanks_functionality" finished-at="2023-05-11T18:48:52 IST" duration-ms="9982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- men_bottoms_tanks_functionality -->
+        <test-method signature="gear_bags_functionality()[pri:11, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:48:52 IST" name="gear_bags_functionality" finished-at="2023-05-11T18:49:01 IST" duration-ms="8830" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gear_bags_functionality -->
+        <test-method signature="gear_fitness_equipment_functionality()[pri:12, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:49:01 IST" name="gear_fitness_equipment_functionality" finished-at="2023-05-11T18:49:11 IST" duration-ms="9518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gear_fitness_equipment_functionality -->
+        <test-method signature="gear_watches_functionality()[pri:13, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:49:11 IST" name="gear_watches_functionality" finished-at="2023-05-11T18:49:20 IST" duration-ms="8901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gear_watches_functionality -->
+        <test-method signature="training_videodownload__functionality()[pri:14, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:49:20 IST" name="training_videodownload__functionality" finished-at="2023-05-11T18:49:27 IST" duration-ms="7924" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- training_videodownload__functionality -->
+        <test-method signature="Sale_functionality()[pri:15, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:49:27 IST" name="Sale_functionality" finished-at="2023-05-11T18:49:37 IST" duration-ms="9740" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Sale_functionality -->
+        <test-method signature="shop_new_yoga_functionality()[pri:16, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:49:37 IST" name="shop_new_yoga_functionality" finished-at="2023-05-11T18:49:47 IST" duration-ms="9570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shop_new_yoga_functionality -->
+        <test-method signature="shop_new_yoga_image_redirection()[pri:17, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:49:47 IST" name="shop_new_yoga_image_redirection" finished-at="2023-05-11T18:49:55 IST" duration-ms="8708" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shop_new_yoga_image_redirection -->
+        <test-method signature="shop_pants_image_redirection()[pri:18, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:49:55 IST" name="shop_pants_image_redirection" finished-at="2023-05-11T18:50:05 IST" duration-ms="9322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shop_pants_image_redirection -->
+        <test-method signature="shop_tees_image_redirection()[pri:19, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:50:05 IST" name="shop_tees_image_redirection" finished-at="2023-05-11T18:50:14 IST" duration-ms="8949" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shop_tees_image_redirection -->
+        <test-method signature="shop_erin_recommends_image_redirection()[pri:20, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:50:14 IST" name="shop_erin_recommends_image_redirection" finished-at="2023-05-11T18:50:23 IST" duration-ms="8983" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shop_erin_recommends_image_redirection -->
+        <test-method signature="shop_performance_image_redirection()[pri:21, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:50:23 IST" name="shop_performance_image_redirection" finished-at="2023-05-11T18:50:31 IST" duration-ms="8104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shop_performance_image_redirection -->
+        <test-method signature="shop_ecofriendly_image_redirection()[pri:22, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:50:31 IST" name="shop_ecofriendly_image_redirection" finished-at="2023-05-11T18:50:41 IST" duration-ms="9741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shop_ecofriendly_image_redirection -->
+        <test-method signature="count_link_in_footer()[pri:23, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:50:41 IST" name="count_link_in_footer" finished-at="2023-05-11T18:50:44 IST" duration-ms="3041" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- count_link_in_footer -->
+        <test-method signature="selenium_video_courses_redirection()[pri:24, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:50:44 IST" name="selenium_video_courses_redirection" finished-at="2023-05-11T18:50:56 IST" duration-ms="11926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selenium_video_courses_redirection -->
+        <test-method signature="orders_and_returns_in_footer()[pri:25, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:50:56 IST" name="orders_and_returns_in_footer" finished-at="2023-05-11T18:51:04 IST" duration-ms="8009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orders_and_returns_in_footer -->
+        <test-method signature="search_terms_redirection()[pri:26, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:51:04 IST" name="search_terms_redirection" finished-at="2023-05-11T18:51:12 IST" duration-ms="8181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search_terms_redirection -->
+        <test-method signature="privacy_and_cookie_policy_redirection()[pri:27, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:51:12 IST" name="privacy_and_cookie_policy_redirection" finished-at="2023-05-11T18:51:22 IST" duration-ms="9987" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- privacy_and_cookie_policy_redirection -->
+        <test-method signature="advanced_search_redirection()[pri:28, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:51:22 IST" name="advanced_search_redirection" finished-at="2023-05-11T18:51:30 IST" duration-ms="8330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- advanced_search_redirection -->
+        <test-method signature="contact_us_redirection()[pri:29, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:51:30 IST" name="contact_us_redirection" finished-at="2023-05-11T18:51:39 IST" duration-ms="8978" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- contact_us_redirection -->
+        <test-method signature="hotseller_header_visibility()[pri:30, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:51:39 IST" name="hotseller_header_visibility" finished-at="2023-05-11T18:51:41 IST" duration-ms="2034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- hotseller_header_visibility -->
+        <test-method is-config="true" signature="generateReportend()[pri:0, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:51:41 IST" name="generateReportend" finished-at="2023-05-11T18:51:41 IST" duration-ms="239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReportend -->
+        <test-method is-config="true" signature="Close_quit()[pri:0, instance:Test.HomePageTest@1c93084c]" started-at="2023-05-11T18:51:41 IST" name="Close_quit" finished-at="2023-05-11T18:51:42 IST" duration-ms="868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Close_quit -->
+      </class> <!-- Test.HomePageTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

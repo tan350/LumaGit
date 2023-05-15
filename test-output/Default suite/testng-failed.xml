@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="Test.CustomerLoginTest">
+        <methods>
+          <include name="generateReportend"/>
+          <include name="sign_in_with_Blank_credentials"/>
+          <include name="sign_in_with_invalid_email"/>
+          <include name="sign_in_with_invalid_password"/>
+          <include name="forgotyourpasswordbutton_redirection"/>
+          <include name="generateReportinit"/>
+          <include name="sign_in_with_Blank_password"/>
+          <include name="sign_in_with_valid_credentials"/>
+          <include name="Close_quit"/>
+          <include name="sign_in_with_blank_email"/>
+          <include name="Launch"/>
+          <include name="sign_in_with_invalid_credentials"/>
+          <include name="createanaccountbutton_redirection"/>
+        </methods>
+      </class> <!-- Test.CustomerLoginTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
