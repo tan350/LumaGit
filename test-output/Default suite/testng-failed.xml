@@ -6,18 +6,10 @@
       <class name="Test.CustomerLoginTest">
         <methods>
           <include name="generateReportend"/>
-          <include name="sign_in_with_Blank_credentials"/>
-          <include name="sign_in_with_invalid_email"/>
-          <include name="sign_in_with_invalid_password"/>
           <include name="forgotyourpasswordbutton_redirection"/>
           <include name="generateReportinit"/>
-          <include name="sign_in_with_Blank_password"/>
-          <include name="sign_in_with_valid_credentials"/>
           <include name="Close_quit"/>
-          <include name="sign_in_with_blank_email"/>
           <include name="Launch"/>
-          <include name="sign_in_with_invalid_credentials"/>
-          <include name="createanaccountbutton_redirection"/>
         </methods>
       </class> <!-- Test.CustomerLoginTest -->
     </classes>
