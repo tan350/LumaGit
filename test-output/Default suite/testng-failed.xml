@@ -6,6 +6,8 @@
       <class name="Test.WhatNewTest">
         <methods>
           <include name="style_exercise"/>
+          <include name="category_electronic"/>
+          <include name="category_exercise"/>
           <include name="Launch"/>
           <include name="Close_quit"/>
         </methods>

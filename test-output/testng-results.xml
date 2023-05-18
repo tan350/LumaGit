@@ -2,56 +2,56 @@
 <testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-18T15:26:41 IST" name="Default suite" finished-at="2023-05-18T15:28:46 IST" duration-ms="125502">
+  <suite started-at="2023-05-18T18:24:53 IST" name="Default suite" finished-at="2023-05-18T18:26:49 IST" duration-ms="115952">
     <groups>
     </groups>
-    <test started-at="2023-05-18T15:26:41 IST" name="Default test" finished-at="2023-05-18T15:28:46 IST" duration-ms="125502">
+    <test started-at="2023-05-18T18:24:53 IST" name="Default test" finished-at="2023-05-18T18:26:49 IST" duration-ms="115952">
       <class name="Test.WhatNewTest">
-        <test-method is-config="true" signature="Launch()[pri:0, instance:Test.WhatNewTest@6892b3b6]" started-at="2023-05-18T15:26:29 IST" name="Launch" finished-at="2023-05-18T15:26:41 IST" duration-ms="11721" status="PASS">
+        <test-method is-config="true" signature="Launch()[pri:0, instance:Test.WhatNewTest@6892b3b6]" started-at="2023-05-18T18:24:45 IST" name="Launch" finished-at="2023-05-18T18:24:53 IST" duration-ms="8020" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Launch -->
-        <test-method signature="product_visible_in_gridoption()[pri:1, instance:Test.WhatNewTest@6892b3b6]" started-at="2023-05-18T15:26:41 IST" name="product_visible_in_gridoption" finished-at="2023-05-18T15:27:06 IST" duration-ms="25018" status="PASS">
+        <test-method signature="product_visible_in_gridoption()[pri:1, instance:Test.WhatNewTest@6892b3b6]" started-at="2023-05-18T18:24:53 IST" name="product_visible_in_gridoption" finished-at="2023-05-18T18:25:15 IST" duration-ms="21542" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- product_visible_in_gridoption -->
-        <test-method signature="sorting_by_product_name()[pri:2, instance:Test.WhatNewTest@6892b3b6]" started-at="2023-05-18T15:27:06 IST" name="sorting_by_product_name" finished-at="2023-05-18T15:27:13 IST" duration-ms="7114" status="PASS">
+        <test-method signature="sorting_by_product_name()[pri:2, instance:Test.WhatNewTest@6892b3b6]" started-at="2023-05-18T18:25:15 IST" name="sorting_by_product_name" finished-at="2023-05-18T18:25:21 IST" duration-ms="6104" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sorting_by_product_name -->
-        <test-method signature="sorting_by_product_price()[pri:3, instance:Test.WhatNewTest@6892b3b6]" started-at="2023-05-18T15:27:13 IST" name="sorting_by_product_price" finished-at="2023-05-18T15:27:20 IST" duration-ms="6747" status="PASS">
+        <test-method signature="sorting_by_product_price()[pri:3, instance:Test.WhatNewTest@6892b3b6]" started-at="2023-05-18T18:25:21 IST" name="sorting_by_product_price" finished-at="2023-05-18T18:25:27 IST" duration-ms="5920" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sorting_by_product_price -->
-        <test-method signature="sorting_by_product_position()[pri:4, instance:Test.WhatNewTest@6892b3b6]" started-at="2023-05-18T15:27:20 IST" name="sorting_by_product_position" finished-at="2023-05-18T15:27:26 IST" duration-ms="5718" status="PASS">
+        <test-method signature="sorting_by_product_position()[pri:4, instance:Test.WhatNewTest@6892b3b6]" started-at="2023-05-18T18:25:27 IST" name="sorting_by_product_position" finished-at="2023-05-18T18:25:33 IST" duration-ms="5637" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sorting_by_product_position -->
-        <test-method signature="style_duffel()[pri:5, instance:Test.WhatNewTest@6892b3b6]" started-at="2023-05-18T15:27:26 IST" name="style_duffel" finished-at="2023-05-18T15:27:38 IST" duration-ms="12317" status="PASS">
+        <test-method signature="style_duffel()[pri:5, instance:Test.WhatNewTest@6892b3b6]" started-at="2023-05-18T18:25:33 IST" name="style_duffel" finished-at="2023-05-18T18:25:44 IST" duration-ms="11513" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- style_duffel -->
-        <test-method signature="style_messenger()[pri:6, instance:Test.WhatNewTest@6892b3b6]" started-at="2023-05-18T15:27:38 IST" name="style_messenger" finished-at="2023-05-18T15:27:51 IST" duration-ms="13461" status="PASS">
+        <test-method signature="style_messenger()[pri:6, instance:Test.WhatNewTest@6892b3b6]" started-at="2023-05-18T18:25:44 IST" name="style_messenger" finished-at="2023-05-18T18:25:57 IST" duration-ms="12506" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- style_messenger -->
-        <test-method signature="style_laptop()[pri:7, instance:Test.WhatNewTest@6892b3b6]" started-at="2023-05-18T15:27:51 IST" name="style_laptop" finished-at="2023-05-18T15:28:05 IST" duration-ms="13379" status="PASS">
+        <test-method signature="style_laptop()[pri:7, instance:Test.WhatNewTest@6892b3b6]" started-at="2023-05-18T18:25:57 IST" name="style_laptop" finished-at="2023-05-18T18:26:10 IST" duration-ms="13191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- style_laptop -->
-        <test-method signature="style_exercise()[pri:8, instance:Test.WhatNewTest@6892b3b6]" started-at="2023-05-18T15:28:05 IST" name="style_exercise" finished-at="2023-05-18T15:28:18 IST" duration-ms="13148" status="PASS">
+        <test-method signature="style_exercise()[pri:8, instance:Test.WhatNewTest@6892b3b6]" started-at="2023-05-18T18:26:10 IST" name="style_exercise" finished-at="2023-05-18T18:26:22 IST" duration-ms="12665" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- style_exercise -->
-        <test-method signature="category_electronic()[pri:9, instance:Test.WhatNewTest@6892b3b6]" started-at="2023-05-18T15:28:18 IST" name="category_electronic" finished-at="2023-05-18T15:28:31 IST" duration-ms="13665" status="PASS">
+        <test-method signature="category_electronic()[pri:9, instance:Test.WhatNewTest@6892b3b6]" started-at="2023-05-18T18:26:22 IST" name="category_electronic" finished-at="2023-05-18T18:26:36 IST" duration-ms="13259" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- category_electronic -->
-        <test-method signature="category_exercise()[pri:10, instance:Test.WhatNewTest@6892b3b6]" started-at="2023-05-18T15:28:31 IST" name="category_exercise" finished-at="2023-05-18T15:28:46 IST" duration-ms="14896" status="PASS">
+        <test-method signature="category_exercise()[pri:10, instance:Test.WhatNewTest@6892b3b6]" started-at="2023-05-18T18:26:36 IST" name="category_exercise" finished-at="2023-05-18T18:26:49 IST" duration-ms="13579" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- category_exercise -->
-        <test-method is-config="true" signature="Close_quit()[pri:0, instance:Test.WhatNewTest@6892b3b6]" started-at="2023-05-18T15:28:46 IST" name="Close_quit" finished-at="2023-05-18T15:28:47 IST" duration-ms="714" status="PASS">
+        <test-method is-config="true" signature="Close_quit()[pri:0, instance:Test.WhatNewTest@6892b3b6]" started-at="2023-05-18T18:26:49 IST" name="Close_quit" finished-at="2023-05-18T18:26:50 IST" duration-ms="1023" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Close_quit -->
