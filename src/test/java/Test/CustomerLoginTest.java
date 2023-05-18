@@ -33,7 +33,9 @@ public class CustomerLoginTest extends TestBaseLuma {
 	
 	@BeforeTest
 	public void generateReportinit() {
-		extent=new ExtentReports("D:\\workspace\\QA_Project3\\Extent_Reportgit\\CustomerLoginPageExtentReport.html",true);	
+//		extent=new ExtentReports(System.getProperty("user.dir")+"/test-output/AccountReport.html",true);	
+//		extent=new ExtentReports("C:\\Users\\tasharma\\.jenkins\\workspace\\CustomerLogin\\CustomerLoginPageExtentReport.html",true);
+		extent=new ExtentReports("D:\\workspace\\QA_Project3\\test-output\\LumaDemoExtentReports\\CustomerLoginPageExtentReport.html",true);
 	}
 
 	@AfterTest

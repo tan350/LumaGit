@@ -39,7 +39,7 @@ public class ProfilePageTest extends TestBaseLuma {
 		Assert.assertEquals(driver.getTitle(),"My Account");
 	}
 	
-	@Test(priority = 2,enabled=false)
+	@Test(priority = 2)
 	public void my_wishlist_redirection() throws InterruptedException {
 		Thread.sleep(3000);
 		profilepage.clickOnAccountDropdownButton();
@@ -48,7 +48,7 @@ public class ProfilePageTest extends TestBaseLuma {
 		driver.navigate().back();
 	}
 	
-	@Test(priority = 3,enabled=false)
+	@Test(priority = 3)
 	public void edit_contact_info_functionality() throws InterruptedException {
 		Thread.sleep(3000);
 		profilepage.clickOnEditContactInfo();
@@ -61,7 +61,7 @@ public class ProfilePageTest extends TestBaseLuma {
 		Assert.assertTrue(profilepage.accountInfoSavedMessage().isDisplayed());
 	}
 	
-	@Test(priority = 4,enabled=false)
+	@Test(priority = 4)
 	public void edit_newsletter_subscription_functionality() throws InterruptedException {
 		Thread.sleep(3000);
 		profilepage.clickOnEditNewsletters();
@@ -71,7 +71,7 @@ public class ProfilePageTest extends TestBaseLuma {
 		Assert.assertTrue(profilepage.subscriptionMessage().isDisplayed());
 	}
 	
-	@Test(priority = 5,enabled=false)
+	@Test(priority = 5)
 	public void my_orders_functionality() throws InterruptedException {
 		Thread.sleep(3000);
 		profilepage.clickOnMyOrders();
@@ -79,7 +79,7 @@ public class ProfilePageTest extends TestBaseLuma {
 		Assert.assertEquals(driver.getTitle(),"My Orders");
 	}
 	
-	@Test(priority = 6,enabled=false)
+	@Test(priority = 6)
 	public void my_downloadable_products_functionality() throws InterruptedException {
 		Thread.sleep(3000);
 		profilepage.clickOnMyDownloadableProducts();
@@ -87,7 +87,7 @@ public class ProfilePageTest extends TestBaseLuma {
 		Assert.assertEquals(driver.getTitle(),"My Downloadable Products");
 	}
 	
-	@Test(priority = 7,enabled=false)
+	@Test(priority = 7)
 	public void my_wish_list_functionality() throws InterruptedException {
 		Thread.sleep(3000);
 		profilepage.clickOnMyWishListTab();
@@ -95,7 +95,7 @@ public class ProfilePageTest extends TestBaseLuma {
 		Assert.assertEquals(driver.getTitle(),"My Wish List");
 	}
 	
-	@Test(priority = 8,enabled=false)
+	@Test(priority = 8)
 	public void address_book_functionality() throws InterruptedException {
 		Thread.sleep(3000);
 		profilepage.clickOnAddressBook();
@@ -103,7 +103,7 @@ public class ProfilePageTest extends TestBaseLuma {
 		Assert.assertEquals(driver.getTitle(),"Address Book");
 	}
 	
-	@Test(priority = 9,enabled=false)
+	@Test(priority = 9)
 	public void account_information_functionality() throws InterruptedException {
 		Thread.sleep(3000);
 		profilepage.clickOnAccountInformation();
@@ -111,7 +111,7 @@ public class ProfilePageTest extends TestBaseLuma {
 		Assert.assertEquals(driver.getTitle(),"Account Information");
 	}
 	
-	@Test(priority = 10,enabled=false)
+	@Test(priority = 10)
 	public void stored_payment_methods_functionality() throws InterruptedException {
 		Thread.sleep(3000);
 		profilepage.clickOnStoredPaymentMethods();
@@ -119,7 +119,7 @@ public class ProfilePageTest extends TestBaseLuma {
 		Assert.assertEquals(driver.getTitle(),"Stored Payment Methods");
 	}
 	
-	@Test(priority = 11,enabled=false)
+	@Test(priority = 11)
 	public void my_product_reviews_functionality() throws InterruptedException {
 		Thread.sleep(3000);
 		profilepage.clickOnMyProductReviews();
@@ -127,7 +127,7 @@ public class ProfilePageTest extends TestBaseLuma {
 		Assert.assertEquals(driver.getTitle(),"My Product Reviews");
 	}
 	
-	@Test(priority = 12,enabled=false)
+	@Test(priority = 12)
 	public void newsletter_subscriptions_functionality() throws InterruptedException {
 		Thread.sleep(3000);
 		profilepage.clickOnNewsletterSubscriptions();
@@ -135,7 +135,7 @@ public class ProfilePageTest extends TestBaseLuma {
 		Assert.assertEquals(driver.getTitle(),"Newsletter Subscription");
 	}
 	
-	@Test(priority = 13, enabled=false)
+	@Test(priority = 13)
 	public void viewall_myaccount_functionality() throws InterruptedException {
 		Thread.sleep(3000);
 		profilepage.clickOnViewAllMyAccount();
@@ -143,7 +143,7 @@ public class ProfilePageTest extends TestBaseLuma {
 		Assert.assertEquals(driver.getTitle(),"My Account");
 	}
 	
-	@Test(priority = 14,enabled=false)
+	@Test(priority = 14)
 	public void vieworder_functionality() throws InterruptedException {
 		Thread.sleep(3000);
 		profilepage.clickOnViewAllMyOrders();
@@ -153,7 +153,7 @@ public class ProfilePageTest extends TestBaseLuma {
 		Assert.assertEquals(driver.getTitle(),"Order # 000007449");
 	}
 	
-	@Test(priority = 15, enabled=false)
+	@Test(priority = 15)
 	public void signout_button_functionality() throws InterruptedException {
 		Thread.sleep(3000);
 		profilepage.clickOnAccountDropdownButton();
@@ -161,13 +161,13 @@ public class ProfilePageTest extends TestBaseLuma {
 		Assert.assertTrue(profilepage.signOutMessage().isDisplayed());
 	}
 	
-	@Test(priority = 2)
+	@Test(priority = 16)
 	public void change_password_redirection() throws InterruptedException {
 		profilepage.clickOnChangePassword();
 		Assert.assertTrue(profilepage.changePasswordCheckbox().isEnabled());
 	}
 	
-	@Test(priority = 3)
+	@Test(priority = 17)
 	public void change_password_functionality() throws InterruptedException {
 		Thread.sleep(3000);
 		profilepage.enterCurrentPassword(properties.getProperty("Password"));
@@ -184,7 +184,7 @@ public class ProfilePageTest extends TestBaseLuma {
 		customerloginpage.clickOnsignInButton();
 	}
 	
-	@Test(priority =4)
+	@Test(priority =18)
 	public void change_email_functionality() throws InterruptedException {
 		Thread.sleep(3000);
 		profilepage.clickOnChangePassword();
@@ -197,7 +197,7 @@ public class ProfilePageTest extends TestBaseLuma {
 		Assert.assertTrue(profilepage.passwordInfoSavedMessage().isDisplayed());
 	}
 	
-	@Test(priority =5)
+	@Test(priority =19)
 	public void manage_address_redirection() throws InterruptedException {
 		CustomerLoginPage customerloginpage =new CustomerLoginPage();
 		customerloginpage.enterEmail(properties.getProperty("Email"));
@@ -210,21 +210,21 @@ public class ProfilePageTest extends TestBaseLuma {
 		Assert.assertEquals(driver.getTitle(),"Address Book");
 	}
 	
-	@Test(priority =6)
+	@Test(priority =20)
 	public void change_billing_address_redirection() throws InterruptedException {
 		profilepage.clickOnChangeBillingAddress();
 		Assert.assertEquals(driver.getTitle(),"Edit Address");
 		driver.navigate().back();
 	}
 	
-	@Test(priority =7)
+	@Test(priority =21)
 	public void change_shipping_address_redirection() throws InterruptedException {
 		profilepage.clickOnChangeShippingAddress();
 		Assert.assertEquals(driver.getTitle(),"Edit Address");
 		driver.navigate().back();
 	}
 	
-	@Test(priority = 8)
+	@Test(priority = 22)
 	public void edit_billing_address_redirection() throws InterruptedException {
 		Thread.sleep(3000);
 		profilepage.clickOnViewAllMyAccount();
@@ -234,7 +234,7 @@ public class ProfilePageTest extends TestBaseLuma {
 		Assert.assertEquals(driver.getTitle(),"Address Information");
 	}
 	
-	@Test(priority = 9)
+	@Test(priority = 23)
 	public void edit_shipping_address_redirection() throws InterruptedException {
 		Thread.sleep(3000);
 		profilepage.clickOnViewAllMyAccount();
@@ -244,7 +244,7 @@ public class ProfilePageTest extends TestBaseLuma {
 		Assert.assertEquals(driver.getTitle(),"Address Information");
 	}
 	
-	@Test(priority = 10)
+	@Test(priority = 24)
 	public void add_recently_ordered_item_into_cart_functionality() throws InterruptedException {
 		Thread.sleep(3000);
 		profilepage.clickOnRadiantTeeCheckbox();
@@ -253,7 +253,7 @@ public class ProfilePageTest extends TestBaseLuma {
 		Assert.assertTrue(profilepage.addToCartMessage().isDisplayed());
 	}
 	
-	@Test(priority = 11)
+	@Test(priority = 25)
 	public void reorder_redirection() throws InterruptedException {
 		Thread.sleep(3000);
 		profilepage.clickOnViewAllMyAccount();
@@ -263,7 +263,7 @@ public class ProfilePageTest extends TestBaseLuma {
 		Assert.assertEquals(driver.getTitle(),"Shopping Cart");
 	}
 
-//	@AfterSuite
+	@AfterSuite
 	public void Close_quit(){
 		Toclose();
 	}

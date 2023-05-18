@@ -211,6 +211,17 @@ public class CreateanAccountTest extends TestBaseLuma {
 	@Test(priority = 11)
 	public void verify_label_confirmpassword_on_Page()
 	{
+		
+		test=extent.startTest("Verify whether confirm password label is visible properly on Create New Customer Account Page.");
+		test.log(LogStatus.INFO, "confirm password label visibility Test is intiated.");
+		test.log(LogStatus.INFO,"Verify confirm password label is visible properly on Create New Customer Account Page.");
+
+		if(createaccountpage.labelConfirmPassword().isDisplayed()) {
+			test.log(LogStatus.PASS, "confirm password label is visible properly on Create New Customer Account Page.");
+		}
+		else {
+			test.log(LogStatus.FAIL, "confirm password label is not visible properly on Create New Customer Account Page.");
+		}
 		Assert.assertTrue(createaccountpage.labelConfirmPassword().isDisplayed());
 	}
 
@@ -224,12 +235,36 @@ public class CreateanAccountTest extends TestBaseLuma {
 		createaccountpage.enterConfirmPassword(properties.getProperty("Password"));
 		createaccountpage.clickOnCreateAnAccountButton();
 		Thread.sleep(3000);
+		
+		test=extent.startTest("Verify whether account created successfully with valid credentials.");
+		test.log(LogStatus.INFO, "Create account with valid credentials Test is intiated.");
+		test.log(LogStatus.INFO,"Verify account created successfully with valid credentials.");
+
+		if(createaccountpage.alreadyAccountMessage().isDisplayed()) {
+			test.log(LogStatus.PASS, "Account created successfully with valid credentials.");
+		}
+		else {
+			test.log(LogStatus.FAIL, "Account is not created successfully with valid credentials.");
+		}
 		Assert.assertTrue(createaccountpage.alreadyAccountMessage().isDisplayed());
 	}
 
 	@Test(priority = 13)
 	public void forgotpassword_redirection() {
 		createaccountpage.clickOnForgotPassword();
+		
+		test=extent.startTest("Verify whether forgot password redirects to Forgot password? Page sucessfully.");
+		test.log(LogStatus.INFO, "Create account with valid credentials Test is intiated.");
+		test.log(LogStatus.INFO,"Verify forgot password redirects to Forgot password? Page sucessfully.");
+
+		String actual=driver.getTitle();
+		String expected="Forgot Your Password?";
+		if(actual.equals(expected)) {
+			test.log(LogStatus.PASS, "forgot password redirects to Forgot password? Page sucessfully.");
+		}
+		else {
+			test.log(LogStatus.FAIL, "forgot password not redirect to Forgot password? Page sucessfully.");
+		}
 		Assert.assertEquals(driver.getTitle(),"Forgot Your Password?");
 		driver.navigate().back();
 	}
@@ -239,6 +274,17 @@ public class CreateanAccountTest extends TestBaseLuma {
 		createaccountpage.enterEmailForSubscribe(properties.getProperty("Email"));
 		createaccountpage.clickOnSubscribe();
 		Thread.sleep(3000);
+		
+		test=extent.startTest("Verify whether Newsletter gets subscribed upon clicking subscribe button.");
+		test.log(LogStatus.INFO, "subscribe Button functionality Test is intiated.");
+		test.log(LogStatus.INFO,"Verify Newsletter gets subscribed upon clicking subscribe button.");
+
+		if(createaccountpage.alreadySubscribedMessage().isDisplayed()) {
+			test.log(LogStatus.PASS, "Newsletter gets subscribed upon clicking subscribe button.");
+		}
+		else {
+			test.log(LogStatus.FAIL, "Newsletter does not get subscribed upon clicking subscribe button.");
+		}
 		Assert.assertTrue(createaccountpage.alreadySubscribedMessage().isDisplayed());
 	}
 	
@@ -253,6 +299,17 @@ public class CreateanAccountTest extends TestBaseLuma {
 		createaccountpage.enterConfirmPassword(properties.getProperty("Password"));
 		createaccountpage.clickOnCreateAnAccountButton();
 		Thread.sleep(3000);
+		
+		test=extent.startTest("Verify whether user should not able to create an account with empty first name.");
+		test.log(LogStatus.INFO, "create an account with empty first name Test is intiated.");
+		test.log(LogStatus.INFO,"Verify user should not able to create an account with empty first name.");
+
+		if(createaccountpage.errorMessageFirstName().isDisplayed()) {
+			test.log(LogStatus.PASS, "user should not able to create an account with empty first name.");
+		}
+		else {
+			test.log(LogStatus.FAIL, "user should be able to create an account with empty first name.");
+		}
 		Assert.assertTrue(createaccountpage.errorMessageFirstName().isDisplayed());
 	}
 	
@@ -267,6 +324,17 @@ public class CreateanAccountTest extends TestBaseLuma {
 		createaccountpage.enterConfirmPassword(properties.getProperty("Password"));
 		createaccountpage.clickOnCreateAnAccountButton();
 		Thread.sleep(3000);
+		
+		test=extent.startTest("Verify whether user should not able to create an account with empty last name.");
+		test.log(LogStatus.INFO, "create an account with empty last name Test is intiated.");
+		test.log(LogStatus.INFO,"Verify user should not able to create an account with empty last name.");
+
+		if(createaccountpage.errorMessageLastName().isDisplayed()) {
+			test.log(LogStatus.PASS, "user should not able to create an account with empty last name.");
+		}
+		else {
+			test.log(LogStatus.FAIL, "user should be able to create an account with empty last name.");
+		}
 		Assert.assertTrue(createaccountpage.errorMessageLastName().isDisplayed());
 	}
 	
@@ -281,7 +349,19 @@ public class CreateanAccountTest extends TestBaseLuma {
 		createaccountpage.enterConfirmPassword(properties.getProperty("Password"));
 		createaccountpage.clickOnCreateAnAccountButton();
 		Thread.sleep(3000);
-		createaccountpage.alreadyAccountMessage();
+		
+		test=extent.startTest("Verify whether user should be able to create an account with unchecked Signup for newsletter checkbox.");
+		test.log(LogStatus.INFO, "create an account with unchecked Signup for newsletter checkbox Test is intiated.");
+		test.log(LogStatus.INFO,"Verify user should not able to create an account with unchecked Signup for newsletter checkbox.");
+
+		if(createaccountpage.alreadyAccountMessage().isDisplayed()) {
+			test.log(LogStatus.PASS, "user should be able to create an account with unchecked Signup for newsletter checkbox.");
+		}
+		else {
+			test.log(LogStatus.FAIL, "user should not able to create an account with unchecked Signup for newsletter checkbox.");
+		}
+		Assert.assertTrue(createaccountpage.alreadyAccountMessage().isDisplayed());
+		
 	}
 	
 	@Test(priority = 18)
@@ -295,6 +375,17 @@ public class CreateanAccountTest extends TestBaseLuma {
 		createaccountpage.enterConfirmPassword(properties.getProperty("Password"));
 		createaccountpage.clickOnCreateAnAccountButton();
 		Thread.sleep(3000);
+		
+		test=extent.startTest("Verify whether user should be able to create an account with empty email.");
+		test.log(LogStatus.INFO, "create an account with with empty email Test is intiated.");
+		test.log(LogStatus.INFO,"Verify user should not able to create an account with empty email.");
+
+		if(createaccountpage.errorMessageEmail().isDisplayed()) {
+			test.log(LogStatus.PASS, "user should not able to create an account with empty email.");
+		}
+		else {
+			test.log(LogStatus.FAIL, "user should able to create an account with empty email.");
+		}
 		Assert.assertTrue(createaccountpage.errorMessageEmail().isDisplayed());
 	}
 	
@@ -309,6 +400,17 @@ public class CreateanAccountTest extends TestBaseLuma {
 		createaccountpage.enterConfirmPassword(properties.getProperty("Password"));
 		createaccountpage.clickOnCreateAnAccountButton();
 		Thread.sleep(3000);
+		
+		test=extent.startTest("Verify whether user should be able to create an account with empty password.");
+		test.log(LogStatus.INFO, "create an account with with empty password Test is intiated.");
+		test.log(LogStatus.INFO,"Verify user should not able to create an account with empty password.");
+
+		if(createaccountpage.errorMessagePassword().isDisplayed()) {
+			test.log(LogStatus.PASS, "user should not able to create an account with with empty password.");
+		}
+		else {
+			test.log(LogStatus.FAIL, "user should be able to create an account with empty password.");
+		}
 		Assert.assertTrue(createaccountpage.errorMessagePassword().isDisplayed());
 	}
 	
@@ -323,6 +425,17 @@ public class CreateanAccountTest extends TestBaseLuma {
 		createaccountpage.enterPassword(properties.getProperty("Password"));
 		createaccountpage.clickOnCreateAnAccountButton();
 		Thread.sleep(3000);
+		
+		test=extent.startTest("Verify whether user should be able to create an account with empty confirm password.");
+		test.log(LogStatus.INFO, "create an account with with empty confirm password Test is intiated.");
+		test.log(LogStatus.INFO,"Verify user should not able to create an account with empty confirm password.");
+
+		if(createaccountpage.errorMessageConfirmPassword().isDisplayed()) {
+			test.log(LogStatus.PASS, "user should not able to create an account with with empty confirm password.");
+		}
+		else {
+			test.log(LogStatus.FAIL, "user should be able to create an account with empty confirm password.");
+		}
 		Assert.assertTrue(createaccountpage.errorMessageConfirmPassword().isDisplayed());
 	}
 	
@@ -337,6 +450,17 @@ public class CreateanAccountTest extends TestBaseLuma {
 		createaccountpage.enterPassword(properties.getProperty("Password"));
 		createaccountpage.clickOnCreateAnAccountButton();
 		Thread.sleep(3000);
+		
+		test=extent.startTest("Verify whether user should be able to create an account with invalid email.");
+		test.log(LogStatus.INFO, "create an account with with invalid email Test is intiated.");
+		test.log(LogStatus.INFO,"Verify user should not able to create an account with invalid email.");
+
+		if(createaccountpage.errorMessageEmail().isDisplayed()) {
+			test.log(LogStatus.PASS, "user should not able to create an account with invalid email.");
+		}
+		else {
+			test.log(LogStatus.FAIL, "user should be able to create an account with invalid email.");
+		}
 		Assert.assertTrue(createaccountpage.errorMessageEmail().isDisplayed());
 	}
 	
@@ -351,6 +475,17 @@ public class CreateanAccountTest extends TestBaseLuma {
 		createaccountpage.enterPassword(properties.getProperty("InvalidPassword"));
 		createaccountpage.clickOnCreateAnAccountButton();
 		Thread.sleep(3000);
+		
+		test=extent.startTest("Verify whether user should be able to create an account with invalid password.");
+		test.log(LogStatus.INFO, "create an account with with invalid password Test is intiated.");
+		test.log(LogStatus.INFO,"Verify user should not able to create an account with invalid password.");
+
+		if(createaccountpage.errorMessagePassword().isDisplayed()) {
+			test.log(LogStatus.PASS, "user should not able to create an account with invalid password.");
+		}
+		else {
+			test.log(LogStatus.FAIL, "user should be able to create an account with invalid password.");
+		}
 		Assert.assertTrue(createaccountpage.errorMessagePassword().isDisplayed());
 	}
 	

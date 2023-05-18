@@ -109,17 +109,6 @@ public class CartPageTest extends TestBaseLuma {
 		Assert.assertEquals(cartpage.shippingAndBillingAddressSame(), true);
 	}
 	
-	@Test(priority = 8, enabled=false)
-	public void reorder_product() throws InterruptedException {
-		Thread.sleep(2000);
-		cartpage.clickOnReorder();
-		Thread.sleep(3000);
-		cartpage.enterQtyProduct(properties.getProperty("Quantity"));
-		Thread.sleep(3000);
-		cartpage.clickOnProceedToCheckout();
-		Thread.sleep(3000);
-		Assert.assertEquals(driver.getTitle(),"Checkout");
-	}
 	
 	@AfterSuite
 	public void Close_quit(){

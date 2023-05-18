@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Test.CustomerLoginTest">
+      <class name="Test.WhatNewTest">
         <methods>
-          <include name="generateReportend"/>
-          <include name="forgotyourpasswordbutton_redirection"/>
-          <include name="generateReportinit"/>
-          <include name="Close_quit"/>
+          <include name="style_exercise"/>
           <include name="Launch"/>
+          <include name="Close_quit"/>
         </methods>
-      </class> <!-- Test.CustomerLoginTest -->
+      </class> <!-- Test.WhatNewTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
