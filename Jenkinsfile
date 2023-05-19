@@ -2,15 +2,22 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Get source code') {
             steps {
                 git 'https://github.com/tan350/LumaGit.git'
-                echo 'Build Application'
+                echo 'Get source code of Application'
             }
         }
         
-        stage('Test') {
+        tage('Build code') {
             steps {
+                bat script: 'mvn compile'
+                echo 'Build code of Application'
+            }
+        }
+        stage('Run Tests') {
+            steps {
+                bat script: 'mvn test -Dbrowser-localfirefox'
                 echo 'Test Application'
             }
         }
