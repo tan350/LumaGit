@@ -9,7 +9,7 @@ pipeline {
             }
         }
         
-        tage('Build code') {
+        stage('Build code') {
             steps {
                 bat script: 'mvn compile'
                 echo 'Build code of Application'
