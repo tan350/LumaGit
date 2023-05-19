@@ -67,6 +67,57 @@ public class WhatNewTest extends TestBaseLuma {
 	public void category_exercise() throws InterruptedException {
 		whatnewpage.CategoryExercise();
 	}
+	
+	@Test(priority=11)
+	public void filter_size_small() throws InterruptedException {
+		whatnewpage.selectSizeSmall();
+	}
+	
+	@Test(priority=12)
+	public void filter_size_32() throws InterruptedException {
+		whatnewpage.selectSize32();
+	}
+	
+	@Test(priority=13)
+	public void filter_price() throws InterruptedException {
+		whatnewpage.selectPrice19();
+	}
+	
+	@Test(priority=14)
+	public void filter_color() throws InterruptedException {
+		whatnewpage.selectColorPurple();
+	}
+	
+	@Test(priority=15)
+	public void filter_activity_outdoor() throws InterruptedException {
+		whatnewpage.selectActivityOutdoor();
+	}
+	
+	@Test(priority=16)
+	public void filter_material_cotton() throws InterruptedException {
+		whatnewpage.selectMaterialCotton();
+	}
+	
+	@Test(priority=17)
+	public void filter_strap_handle_adjustable() throws InterruptedException {
+		whatnewpage.selectStrapHandleAdjustable();
+	}
+	
+	@Test(priority=18)
+	public void filter_features_flapover() throws InterruptedException {
+		whatnewpage.selectFeaturesFlapover();
+	}
+	
+	@Test(priority=19)
+	public void filter_gender_men() throws InterruptedException {
+		whatnewpage.selectGenderMen();
+	}
+	
+	@Test(priority=20)
+	public void filter_eco_collection_yes() throws InterruptedException {
+		whatnewpage.selectEcocollectionYes();
+	}
+
 
 	@AfterSuite
 	public void Close_quit(){

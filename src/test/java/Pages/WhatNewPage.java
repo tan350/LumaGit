@@ -85,7 +85,64 @@ public class WhatNewPage extends TestBaseLuma {
 	
 	@FindBy(xpath="//span[@class='filter-value']")
 	WebElement filterValue;
+	
+	@FindBy(xpath="//div[text()='Size']")
+	WebElement size;
+	
+	@FindBy(xpath="//div[@class='swatch-option text ' and text()='S']")
+	WebElement smallSize;
+	
+	@FindBy(xpath="//div[@class='swatch-option text ' and text()='32']")
+	WebElement size32;
 
+	@FindBy(xpath="//div[text()='Price']")
+	WebElement price;
+	
+	@FindBy(xpath="//a//span[text()='$19.99']")
+	WebElement price19;
+	
+	@FindBy(xpath="//div[text()='Color']")
+	WebElement color;
+
+	@FindBy(xpath="//div[@class='swatch-option color ' and @option-label='Purple']")
+	WebElement colorPurple;
+	
+	@FindBy(xpath="//div[text()='Activity']")
+	WebElement activity;
+	
+	@FindBy(xpath="//a[contains(text(),'Outdoor')]")
+	WebElement activityOutdoor;
+
+	@FindBy(xpath="//div[text()='Material']")
+	WebElement material;
+	
+	@FindBy(xpath="(//a[contains(text(),'Cotton')])[1]")
+	WebElement materialCotton;
+	
+	@FindBy(xpath="//div[text()='Strap/Handle']")
+	WebElement strapHandle;
+	
+	@FindBy(xpath="//a[contains(text(),'Adjustable')]")
+	WebElement strapHandleAdjustable;
+	
+	@FindBy(xpath="//div[text()='Features']")
+	WebElement features;
+	
+	@FindBy(xpath="//a[contains(text(),'Flapover')]")
+	WebElement featuresFlapover;
+	
+	@FindBy(xpath="//div[text()='Gender']")
+	WebElement gender;
+	
+	@FindBy(xpath="(//a[contains(text(),'Men')])[2]")
+	WebElement genderMen;
+	
+	@FindBy(xpath="//div[text()='Eco Collection']")
+	WebElement ecoCollection;
+	
+	@FindBy(xpath="(//a[contains(text(),'Yes')])[1]")
+	WebElement ecoCollectionYes;
+	
 	//method for initializing objects using PageFactory
 	public WhatNewPage(){
 		PageFactory.initElements(driver,this);
@@ -249,4 +306,115 @@ public class WhatNewPage extends TestBaseLuma {
 		Thread.sleep(2000);
 		clearAllButton.click();
 	}
+	
+	public void selectSizeSmall() throws InterruptedException {
+		Thread.sleep(3000);
+		size.click();
+		Thread.sleep(2000);
+		smallSize.click();
+		Thread.sleep(2000);
+		Assert.assertEquals(filterValue.getText(),"S");
+		Thread.sleep(2000);
+		clearAllButton.click();
+	}
+	
+	public void selectSize32() throws InterruptedException {
+		Thread.sleep(3000);
+		size.click();
+		Thread.sleep(2000);
+		size32.click();
+		Thread.sleep(2000);
+		Assert.assertEquals(filterValue.getText(),"32");
+		Thread.sleep(2000);
+		clearAllButton.click();
+	}
+	
+	public void selectPrice19() throws InterruptedException {
+		Thread.sleep(3000);
+		price.click();
+		Thread.sleep(2000);
+		price19.click();
+		Thread.sleep(2000);
+		Assert.assertEquals(filterValue.getText(),"$10.00 - $19.99");
+		Thread.sleep(2000);
+		clearAllButton.click();
+	}
+	
+	public void selectColorPurple() throws InterruptedException {
+		Thread.sleep(3000);
+		color.click();
+		Thread.sleep(2000);
+		colorPurple.click();
+		Thread.sleep(2000);
+		Assert.assertEquals(filterValue.getText(),"Purple");
+		Thread.sleep(2000);
+		clearAllButton.click();
+	}
+	
+	public void selectActivityOutdoor() throws InterruptedException {
+		Thread.sleep(3000);
+		activity.click();
+		Thread.sleep(2000);
+		activityOutdoor.click();
+		Thread.sleep(2000);
+		Assert.assertEquals(filterValue.getText(),"Outdoor");
+		Thread.sleep(2000);
+		clearAllButton.click();
+	}
+	
+	public void selectMaterialCotton() throws InterruptedException {
+		Thread.sleep(3000);
+		material.click();
+		Thread.sleep(2000);
+		materialCotton.click();
+		Thread.sleep(2000);
+		Assert.assertEquals(filterValue.getText(),"Cotton");
+		Thread.sleep(2000);
+		clearAllButton.click();
+	}
+	
+	public void selectStrapHandleAdjustable() throws InterruptedException {
+		Thread.sleep(3000);
+		strapHandle.click();
+		Thread.sleep(2000);
+		strapHandleAdjustable.click();
+		Thread.sleep(2000);
+		Assert.assertEquals(filterValue.getText(),"Adjustable");
+		Thread.sleep(2000);
+		clearAllButton.click();
+	}
+	
+	public void selectFeaturesFlapover() throws InterruptedException {
+		Thread.sleep(3000);
+		features.click();
+		Thread.sleep(2000);
+		featuresFlapover.click();
+		Thread.sleep(2000);
+		Assert.assertEquals(filterValue.getText(),"Flapover");
+		Thread.sleep(2000);
+		clearAllButton.click();
+	}
+	
+	public void selectGenderMen() throws InterruptedException {
+		Thread.sleep(3000);
+		gender.click();
+		Thread.sleep(2000);
+		genderMen.click();
+		Thread.sleep(2000);
+		Assert.assertEquals(filterValue.getText(),"Men");
+		Thread.sleep(2000);
+		clearAllButton.click();
+	}
+	
+	public void selectEcocollectionYes() throws InterruptedException {
+		Thread.sleep(3000);
+		ecoCollection.click();
+		Thread.sleep(2000);
+		ecoCollectionYes.click();
+		Thread.sleep(2000);
+		Assert.assertEquals(filterValue.getText(),"Yes");
+		Thread.sleep(2000);
+		clearAllButton.click();
+	}
+
 }
