@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
+                git 'https://github.com/tan350/LumaGit.git'
                 echo 'Build Application'
             }
         }
