@@ -4,7 +4,7 @@ pipeline {
      stages {
         stage('Get source code') {
             steps {
-                git 'https://github.com/tan350/LumaGit.git'
+                git branch: 'Branch2', url: 'https://github.com/tan350/LumaGit.git'
                 echo 'Get source code of Application'
             }
         }
